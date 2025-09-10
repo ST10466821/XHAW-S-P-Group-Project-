@@ -64,7 +64,7 @@ const App: React.FC = () => {
         'Personal mentorship',
         'Certificate of completion'
       ],
-      price: '$299'
+      price: 'R5 234,45'
     },
     '6months': {
       title: '6 Month Comprehensive Course',
@@ -76,7 +76,7 @@ const App: React.FC = () => {
         'Job placement assistance',
         'Professional certification'
       ],
-      price: '$899'
+      price: 'R15 744,58'
     }
   };
 
