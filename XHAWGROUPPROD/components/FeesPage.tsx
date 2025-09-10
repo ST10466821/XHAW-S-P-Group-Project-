@@ -1,5 +1,5 @@
 import { ScrollView, View, Text, TextInput } from "react-native";
-import styles from "../styles/Styles";
+import { styles } from "../styles/Styles";
 
 function calculateTotal() {
     // TODO: Implement actual calculation logic
@@ -37,3 +37,5 @@ const FeesPage: React.FC = () => {
                 </ScrollView>
             );
         };
+
+export default FeesPage;

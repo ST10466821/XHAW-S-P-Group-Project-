@@ -1,5 +1,5 @@
 import { ScrollView, View, Text } from "react-native";
-import styles from "../styles/Styles";
+import { styles } from "../styles/Styles";
 
 const ContactPage: React.FC = () => (
     <ScrollView style={styles.container} contentContainerStyle={styles.pageContainer}>
@@ -32,3 +32,5 @@ const ContactPage: React.FC = () => (
       </View>
     </ScrollView>
   );
+
+export default ContactPage;

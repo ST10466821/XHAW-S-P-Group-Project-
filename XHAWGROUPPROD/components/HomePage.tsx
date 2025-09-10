@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ScrollView, View, TouchableOpacity, Text } from "react-native";
-import styles from "../styles/Styles";
+import { styles } from "../styles/Styles";
 
 // Dummy courseData and setCurrentPage for demonstration; replace with your actual data and handler
 const courseData = {
@@ -75,3 +75,5 @@ const HomePage: React.FC = () => {
     </ScrollView>
   );
 };
+
+export default HomePage;

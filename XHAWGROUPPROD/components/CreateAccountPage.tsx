@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, ScrollView } from 'react-native';
-import { styles } from '../styles'; // Update the path as needed
-export default function CreateAccountPage (){
+import { styles } from '../styles/Styles';
+export default function CreateAccountPage({ setCurrentPage }: { setCurrentPage: (page: string) => void }){
 
     return (
         <ScrollView style={styles.container} contentContainerStyle={styles.pageContainer}>
