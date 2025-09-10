@@ -550,8 +550,10 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <View style={styles.contentArea}>
+        {renderCurrentPage()}
+      </View>
       <NavigationBar />
-      {renderCurrentPage()}
       <StatusBar style="light" />
     </SafeAreaView>
   );
@@ -562,23 +564,27 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#1f2937',
   },
+  contentArea: {
+    flex: 1,
+  },
   pageContainer: {
     padding: 16,
     paddingBottom: 32,
   },
   navigation: {
     backgroundColor: '#374151',
-    borderBottomWidth: 1,
-    borderBottomColor: '#4b5563',
-    paddingVertical: 8,
+    borderTopWidth: 1,
+    borderTopColor: '#4b5563',
+    paddingVertical: 10,
   },
   navigationContent: {
     paddingHorizontal: 16,
+    alignItems: 'center',
   },
   navButton: {
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    marginHorizontal: 4,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    marginHorizontal: 2,
     borderRadius: 8,
   },
   navButtonActive: {
@@ -586,7 +592,7 @@ const styles = StyleSheet.create({
   },
   navButtonText: {
     color: '#d1d5db',
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: '500',
   },
   navButtonTextActive: {
