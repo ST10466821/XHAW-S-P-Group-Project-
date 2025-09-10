@@ -364,7 +364,7 @@ export default function App() {
                 <TextInput
                   style={styles.discountInput}
                   value={discount.toString()}
-                  onChangeText={(text) => setDiscount(Math.max(0, Math.min(100, Number(text) || 0)))}
+                  onChangeText={(text) => setDiscount(Math.max(0, Math.min(15, Number(text) || 0)))}
                   keyboardType="numeric"
                   placeholder="0"
                 />

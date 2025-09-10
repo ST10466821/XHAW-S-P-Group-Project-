@@ -17,15 +17,17 @@ StyleSheet.create({
     backgroundColor: '#374151',
     borderBottomWidth: 1,
     borderBottomColor: '#4b5563',
-    paddingVertical: 8,
+    paddingVertical: 10,
+    minHeight: 56,
   },
   navigationContent: {
-    paddingHorizontal: 16,
+    paddingHorizontal: 12,
+    alignItems: 'center',
   },
   navButton: {
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    marginHorizontal: 4,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    marginHorizontal: 2,
     borderRadius: 8,
   },
   navButtonActive: {
@@ -33,7 +35,7 @@ StyleSheet.create({
   },
   navButtonText: {
     color: '#d1d5db',
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: '500',
   },
   navButtonTextActive: {
