@@ -9,6 +9,8 @@ interface CourseData {
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'6weeks' | '6months'>('6weeks');
+    // Removed invalid HomePage component definition and moved SVG banner into main App component.
+  
 
   const courseData: Record<'6weeks' | '6months', CourseData> = {
     '6weeks': {
@@ -60,7 +62,8 @@ const App: React.FC = () => {
         {/* Company Mission */}
         <div className="bg-gray-600 p-8 rounded">
           <p className="text-gray-800 text-center">
-            Company Goal/Mission/Purpose
+            Mission Statement:
+Our mission is to empower individuals and communities by delivering innovative, sustainable solutions that drive positive change. We are committed to excellence, integrity, and collaboration, striving to create lasting value for our customers, employees, and stakeholders while contributing to a more equitable and resilient future.
             <br />
             W/Img
           </p>
