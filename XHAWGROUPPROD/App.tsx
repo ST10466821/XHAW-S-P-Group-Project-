@@ -540,9 +540,7 @@ export default function App() {
       case 'six-months': return <SixMonthCoursesPage />;
       case 'contact': return <ContactPage />;
       case 'fees': return <FeesPage />;
-      case 'sign-in': return <SignInPage setCurrentPage={function (page: string): void {
-        throw new Error('Function not implemented.');
-      } } />;
+      case 'sign-in': return <SignInPage setCurrentPage={(page: string) => setCurrentPage(page as PageType)} />;
       case 'create-account': return <CreateAccountPage />;
       default: return <HomePage />;
     }
